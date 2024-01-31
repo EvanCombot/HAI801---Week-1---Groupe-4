@@ -1,17 +1,13 @@
 import java.util.*;
 
 public class Node {
-	// Id for readability of result purposes
     public String id;
-    // Parent in the path
     public Node parent = null;
 
     public List<Edge> neighbors;
 
-    // Evaluation functions
     public int FCost = Integer.MAX_VALUE;
     public int gCost = Integer.MAX_VALUE;
-    // Hardcoded heuristic
     public int hCost; 
 
     Node(int h,String id){
@@ -144,17 +140,13 @@ public class PathFinding {
 import java.util.*;
 
 public class Node {
-	// Id for readability of result purposes
 	public String id;
-	// Parent in the path
 	public Node parent = null;
 
 	public List<Edge> neighbors;
 
-	// Evaluation functions
 	public int FCost = Integer.MAX_VALUE;
 	public int gCost = Integer.MAX_VALUE;
-	// Hardcoded heuristic
 	public int hCost;
 
 	Node(int h,String id){
